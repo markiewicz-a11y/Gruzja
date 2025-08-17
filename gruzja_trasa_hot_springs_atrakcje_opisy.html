@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_797d534841eb2ce94338b2ab68def2f6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_797d534841eb2ce94338b2ab68def2f6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_797d534841eb2ce94338b2ab68def2f6 = L.map(
+                "map_797d534841eb2ce94338b2ab68def2f6",
+                {
+                    center: [42.2, 42.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_284b7315b85c9110cd5ea674acd84171 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_797d534841eb2ce94338b2ab68def2f6);
+        
+    
+            var poly_line_8288b07d2dc25b38d8af6b291e177bd5 = L.polyline(
+                [[42.2679, 42.718], [42.365933, 42.19481], [42.3772594, 42.6011094], [43.0457, 42.7277], [42.9181, 43.0167], [43.0457, 42.7277], [42.4775, 42.3707], [42.3652135, 42.1951369], [41.6168, 41.6367], [41.516813, 41.71878], [41.8204, 41.774], [41.9957, 41.7784], [42.2679, 42.718]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_797d534841eb2ce94338b2ab68def2f6);
+        
+    
+            var feature_group_6e11695b94dcd4025e8210db182eb250 = L.featureGroup(
+                {}
+            ).addTo(map_797d534841eb2ce94338b2ab68def2f6);
+        
+    
+            var marker_1da390c52ec6e3e17e18e1d41897d30c = L.marker(
+                [42.2679, 42.718],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_ec4915058543936420e36514f4178ee6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1da390c52ec6e3e17e18e1d41897d30c.setIcon(icon_ec4915058543936420e36514f4178ee6);
+        
+    
+        var popup_c6bd76693ee9bb2f3a72e2426e4c05c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98f8d367c97701774c60482e403f4a9e = $(`<div id="html_98f8d367c97701774c60482e403f4a9e" style="width: 100.0%; height: 100.0%;"><b>Kutaisi</b><br>Baza wypadowa: stare miasto, dobre noclegi przy lotnisku.</div>`)[0];
+            popup_c6bd76693ee9bb2f3a72e2426e4c05c1.setContent(html_98f8d367c97701774c60482e403f4a9e);
+        
+
+        marker_1da390c52ec6e3e17e18e1d41897d30c.bindPopup(popup_c6bd76693ee9bb2f3a72e2426e4c05c1)
+        ;
+
+        
+    
+    
+            var marker_cc9281d45becb5bb49e685b525772b0a = L.marker(
+                [42.365933, 42.19481],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_903760b709f701bdd216cac63178f2be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc9281d45becb5bb49e685b525772b0a.setIcon(icon_903760b709f701bdd216cac63178f2be);
+        
+    
+        var popup_918533b4eaed6b31b0de8a2ceb030ef4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca311c67c8a73a71282797134c0ea856 = $(`<div id="html_ca311c67c8a73a71282797134c0ea856" style="width: 100.0%; height: 100.0%;"><b>Jikha/Nokalakevi – dzikie źródła</b><br>Naturalne baseny solankowe 38–40°C w lesie.</div>`)[0];
+            popup_918533b4eaed6b31b0de8a2ceb030ef4.setContent(html_ca311c67c8a73a71282797134c0ea856);
+        
+
+        marker_cc9281d45becb5bb49e685b525772b0a.bindPopup(popup_918533b4eaed6b31b0de8a2ceb030ef4)
+        ;
+
+        
+    
+    
+            var marker_253358a90270c2312f7113791ccbabac = L.marker(
+                [42.3772594, 42.6011094],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_a1480b83220e0fceffed0b0e90c5cca5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_253358a90270c2312f7113791ccbabac.setIcon(icon_a1480b83220e0fceffed0b0e90c5cca5);
+        
+    
+        var popup_51fa1cd7d26c01e9481b2c7d8f0728f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49fd445b12df4bdd3accbf8142781921 = $(`<div id="html_49fd445b12df4bdd3accbf8142781921" style="width: 100.0%; height: 100.0%;"><b>Jaskinia Prometeusza</b><br>Trasa 1.4 km, iluminacje; opcjonalna krótka łódka.</div>`)[0];
+            popup_51fa1cd7d26c01e9481b2c7d8f0728f7.setContent(html_49fd445b12df4bdd3accbf8142781921);
+        
+
+        marker_253358a90270c2312f7113791ccbabac.bindPopup(popup_51fa1cd7d26c01e9481b2c7d8f0728f7)
+        ;
+
+        
+    
+    
+            var marker_7f3c798249faca21c8b3d7720d4cb813 = L.marker(
+                [43.0457, 42.7277],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_a68059129816135a8e89b84cc2251ae8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f3c798249faca21c8b3d7720d4cb813.setIcon(icon_a68059129816135a8e89b84cc2251ae8);
+        
+    
+        var popup_51e8f717fc0a411b822468f4c293af93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32aba36ba24935f64b7feecc2dd0b171 = $(`<div id="html_32aba36ba24935f64b7feecc2dd0b171" style="width: 100.0%; height: 100.0%;"><b>Mestia</b><br>Wieże Svanów, kolejka Hatsvali, muzea.</div>`)[0];
+            popup_51e8f717fc0a411b822468f4c293af93.setContent(html_32aba36ba24935f64b7feecc2dd0b171);
+        
+
+        marker_7f3c798249faca21c8b3d7720d4cb813.bindPopup(popup_51e8f717fc0a411b822468f4c293af93)
+        ;
+
+        
+    
+    
+            var marker_e92b13115b4841634f7999ec7cdc8750 = L.marker(
+                [42.9181, 43.0167],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_16d7763548652f9dfb6bb7de7a61383d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e92b13115b4841634f7999ec7cdc8750.setIcon(icon_16d7763548652f9dfb6bb7de7a61383d);
+        
+    
+        var popup_640e562054045721440a989d91fec6a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e4de19ebeee09b7564fbeedc2a48999 = $(`<div id="html_9e4de19ebeee09b7564fbeedc2a48999" style="width: 100.0%; height: 100.0%;"><b>Ushguli</b><br>Średniowieczna wieś 2100 m, widok na Shkharę.</div>`)[0];
+            popup_640e562054045721440a989d91fec6a6.setContent(html_9e4de19ebeee09b7564fbeedc2a48999);
+        
+
+        marker_e92b13115b4841634f7999ec7cdc8750.bindPopup(popup_640e562054045721440a989d91fec6a6)
+        ;
+
+        
+    
+    
+            var marker_4411d364615197d7d40cb847d8e0fb1d = L.marker(
+                [42.4775, 42.3707],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_537ec5c2dc0c975054f3df4fb41c89d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4411d364615197d7d40cb847d8e0fb1d.setIcon(icon_537ec5c2dc0c975054f3df4fb41c89d6);
+        
+    
+        var popup_b0628c51248d42cecb23cd9df8220c4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d443a987864f82c15f317282a83b63b2 = $(`<div id="html_d443a987864f82c15f317282a83b63b2" style="width: 100.0%; height: 100.0%;"><b>Martvili Canyon</b><br>Kładki nad turkusową rzeką, naturalne baseny.</div>`)[0];
+            popup_b0628c51248d42cecb23cd9df8220c4b.setContent(html_d443a987864f82c15f317282a83b63b2);
+        
+
+        marker_4411d364615197d7d40cb847d8e0fb1d.bindPopup(popup_b0628c51248d42cecb23cd9df8220c4b)
+        ;
+
+        
+    
+    
+            var marker_b3d908891b0df60148f66a936c348c6f = L.marker(
+                [41.6168, 41.6367],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_64e520d70d470b6cbff43a213cbc6ad5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b3d908891b0df60148f66a936c348c6f.setIcon(icon_64e520d70d470b6cbff43a213cbc6ad5);
+        
+    
+        var popup_3ee9ee0e0daccf0cfab8f01cf498d47d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96a247633a238a786b59aac2c5027fcd = $(`<div id="html_96a247633a238a786b59aac2c5027fcd" style="width: 100.0%; height: 100.0%;"><b>Batumi</b><br>Bulwar, ogród botaniczny, wieczorne atrakcje.</div>`)[0];
+            popup_3ee9ee0e0daccf0cfab8f01cf498d47d.setContent(html_96a247633a238a786b59aac2c5027fcd);
+        
+
+        marker_b3d908891b0df60148f66a936c348c6f.bindPopup(popup_3ee9ee0e0daccf0cfab8f01cf498d47d)
+        ;
+
+        
+    
+    
+            var marker_52e020c9f802e437a281fc12792cb9e1 = L.marker(
+                [41.516813, 41.71878],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_aeb2f0f309767e7519636a837f1d704b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_52e020c9f802e437a281fc12792cb9e1.setIcon(icon_aeb2f0f309767e7519636a837f1d704b);
+        
+    
+        var popup_520e01972f7f459273d6fbac9b7346a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1fb24407f951a6bce5b536b4b7a5e05 = $(`<div id="html_b1fb24407f951a6bce5b536b4b7a5e05" style="width: 100.0%; height: 100.0%;"><b>Rejon Gvara (Adżaria)</b><br>Górska Adżaria: panoramy, dzikie kąpieliska nad rzeką.</div>`)[0];
+            popup_520e01972f7f459273d6fbac9b7346a9.setContent(html_b1fb24407f951a6bce5b536b4b7a5e05);
+        
+
+        marker_52e020c9f802e437a281fc12792cb9e1.bindPopup(popup_520e01972f7f459273d6fbac9b7346a9)
+        ;
+
+        
+    
+    
+            var marker_ff2c5863303bac68fbe3f4fed1e49180 = L.marker(
+                [41.8204, 41.774],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_3e3ce2799ad98e66ccaed9f09547ef9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff2c5863303bac68fbe3f4fed1e49180.setIcon(icon_3e3ce2799ad98e66ccaed9f09547ef9c);
+        
+    
+        var popup_fe59b117479df146f3572fb4ffaa97e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1076e83cbd9f19a206ba19c840e4b703 = $(`<div id="html_1076e83cbd9f19a206ba19c840e4b703" style="width: 100.0%; height: 100.0%;"><b>Kobuleti</b><br>Spokojniejsze wybrzeże blisko Batumi.</div>`)[0];
+            popup_fe59b117479df146f3572fb4ffaa97e3.setContent(html_1076e83cbd9f19a206ba19c840e4b703);
+        
+
+        marker_ff2c5863303bac68fbe3f4fed1e49180.bindPopup(popup_fe59b117479df146f3572fb4ffaa97e3)
+        ;
+
+        
+    
+    
+            var marker_bea3a9e6024430b79ee50816b304cd86 = L.marker(
+                [41.9957, 41.7784],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_fb72d713f3342268a560757a39cde2f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bea3a9e6024430b79ee50816b304cd86.setIcon(icon_fb72d713f3342268a560757a39cde2f7);
+        
+    
+        var popup_9bc0746f4f5cc63b4b35c84a5db8a080 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d300484823cdd33a6a95bd82f9ccf89c = $(`<div id="html_d300484823cdd33a6a95bd82f9ccf89c" style="width: 100.0%; height: 100.0%;"><b>Ureki</b><br>Czarny, magnetyczny piasek; płytko dla dzieci.</div>`)[0];
+            popup_9bc0746f4f5cc63b4b35c84a5db8a080.setContent(html_d300484823cdd33a6a95bd82f9ccf89c);
+        
+
+        marker_bea3a9e6024430b79ee50816b304cd86.bindPopup(popup_9bc0746f4f5cc63b4b35c84a5db8a080)
+        ;
+
+        
+    
+    
+            var marker_332be15238cefbe196a0f546bf511d63 = L.marker(
+                [42.78, 42.058],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_8177f831d6399fe8dd17ce607d2af441 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_332be15238cefbe196a0f546bf511d63.setIcon(icon_8177f831d6399fe8dd17ce607d2af441);
+        
+    
+        var popup_1ad44ae556994243b190e42684445ffe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9e2e98d1f4f0c04b31addd2746f1839 = $(`<div id="html_f9e2e98d1f4f0c04b31addd2746f1839" style="width: 100.0%; height: 100.0%;"><b>Zapora Enguri</b><br>Spektakularny zbiornik; dobry postój na zdjęcia/piknik.</div>`)[0];
+            popup_1ad44ae556994243b190e42684445ffe.setContent(html_f9e2e98d1f4f0c04b31addd2746f1839);
+        
+
+        marker_332be15238cefbe196a0f546bf511d63.bindPopup(popup_1ad44ae556994243b190e42684445ffe)
+        ;
+
+        
+    
+    
+            var marker_17a64a9b906964140bf3c991342a4745 = L.marker(
+                [43.0278, 42.7342],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_cb5bbc2bb4d86301bd4e7bdb5cad8652 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_17a64a9b906964140bf3c991342a4745.setIcon(icon_cb5bbc2bb4d86301bd4e7bdb5cad8652);
+        
+    
+        var popup_805b1e7c3580cfc6f9ca6339c6a35625 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f521e027572ae353599efbfb3ae0c267 = $(`<div id="html_f521e027572ae353599efbfb3ae0c267" style="width: 100.0%; height: 100.0%;"><b>Kolejka Hatsvali (Zuruldi)</b><br>Łatwe górskie widoki bez długiego trekkingu.</div>`)[0];
+            popup_805b1e7c3580cfc6f9ca6339c6a35625.setContent(html_f521e027572ae353599efbfb3ae0c267);
+        
+
+        marker_17a64a9b906964140bf3c991342a4745.bindPopup(popup_805b1e7c3580cfc6f9ca6339c6a35625)
+        ;
+
+        
+    
+    
+            var marker_8394d9282256305133d0820151282f20 = L.marker(
+                [42.9139, 43.0186],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_a8f63fae5d220698dfadc4a2e0c71933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8394d9282256305133d0820151282f20.setIcon(icon_a8f63fae5d220698dfadc4a2e0c71933);
+        
+    
+        var popup_1b54636b33fd879037f851ed93a47881 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad3558bab51d812ec1638b6742fcf37b = $(`<div id="html_ad3558bab51d812ec1638b6742fcf37b" style="width: 100.0%; height: 100.0%;"><b>Kościół Lamaria – Ushguli</b><br>Najlepsza panorama na lodowiec Shkhara.</div>`)[0];
+            popup_1b54636b33fd879037f851ed93a47881.setContent(html_ad3558bab51d812ec1638b6742fcf37b);
+        
+
+        marker_8394d9282256305133d0820151282f20.bindPopup(popup_1b54636b33fd879037f851ed93a47881)
+        ;
+
+        
+    
+    
+            var marker_7034c2b361afb36276f6ba77e4f37ac6 = L.marker(
+                [43.0605, 42.709],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_b8d2b0627d871ff1b68986a51a8e38fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7034c2b361afb36276f6ba77e4f37ac6.setIcon(icon_b8d2b0627d871ff1b68986a51a8e38fa);
+        
+    
+        var popup_dfe54ad36cbf121cd390f12215c386d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d163d7173b84985b87b0c96f0970b24 = $(`<div id="html_5d163d7173b84985b87b0c96f0970b24" style="width: 100.0%; height: 100.0%;"><b>Most startowy – szlak Chaladi</b><br>Krótki, rodzinny trekking wzdłuż rzeki.</div>`)[0];
+            popup_dfe54ad36cbf121cd390f12215c386d5.setContent(html_5d163d7173b84985b87b0c96f0970b24);
+        
+
+        marker_7034c2b361afb36276f6ba77e4f37ac6.bindPopup(popup_dfe54ad36cbf121cd390f12215c386d5)
+        ;
+
+        
+    
+    
+            var marker_2120fbadeff0baf6c3afa2293529d01c = L.marker(
+                [42.5123, 42.5868],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_ab308c7d82e51f4c3b2f8ebbb0c9a0e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2120fbadeff0baf6c3afa2293529d01c.setIcon(icon_ab308c7d82e51f4c3b2f8ebbb0c9a0e3);
+        
+    
+        var popup_53d3c8fe92addce41604360aa867c160 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90dfb2bfac3bc9b0e7bb34fc9ec0c2ab = $(`<div id="html_90dfb2bfac3bc9b0e7bb34fc9ec0c2ab" style="width: 100.0%; height: 100.0%;"><b>Okatse – wejście (Gordi)</b><br>Kładki nad urwiskami i tarasy widokowe.</div>`)[0];
+            popup_53d3c8fe92addce41604360aa867c160.setContent(html_90dfb2bfac3bc9b0e7bb34fc9ec0c2ab);
+        
+
+        marker_2120fbadeff0baf6c3afa2293529d01c.bindPopup(popup_53d3c8fe92addce41604360aa867c160)
+        ;
+
+        
+    
+    
+            var marker_f7dd9f80693151539328cfeaaf124fbf = L.marker(
+                [42.5943, 42.5241],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_ab6f6063e0c61cd1c6a89226e3ff046e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f7dd9f80693151539328cfeaaf124fbf.setIcon(icon_ab6f6063e0c61cd1c6a89226e3ff046e);
+        
+    
+        var popup_888df9a66f7e215e2491ab551743cc7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_215eaaf25a4990dfc099146e33d18032 = $(`<div id="html_215eaaf25a4990dfc099146e33d18032" style="width: 100.0%; height: 100.0%;"><b>Wodospad Kinchkha</b><br>Wysokie kaskady, taras widokowy; lekki spacer.</div>`)[0];
+            popup_888df9a66f7e215e2491ab551743cc7d.setContent(html_215eaaf25a4990dfc099146e33d18032);
+        
+
+        marker_f7dd9f80693151539328cfeaaf124fbf.bindPopup(popup_888df9a66f7e215e2491ab551743cc7d)
+        ;
+
+        
+    
+    
+            var marker_949194b6388a80df7041ee6560b8d1fe = L.marker(
+                [42.5086, 41.8709],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_365c17a253d43cfaa656ae2669d3bdae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_949194b6388a80df7041ee6560b8d1fe.setIcon(icon_365c17a253d43cfaa656ae2669d3bdae);
+        
+    
+        var popup_185ffa82f14c8730acd849b2429aabad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_999cce50c0d433d45c408029471271cc = $(`<div id="html_999cce50c0d433d45c408029471271cc" style="width: 100.0%; height: 100.0%;"><b>Pałac Dadianich (Zugdidi)</b><br>Muzeum i ogród; dobra przerwa w trasie.</div>`)[0];
+            popup_185ffa82f14c8730acd849b2429aabad.setContent(html_999cce50c0d433d45c408029471271cc);
+        
+
+        marker_949194b6388a80df7041ee6560b8d1fe.bindPopup(popup_185ffa82f14c8730acd849b2429aabad)
+        ;
+
+        
+    
+    
+            var marker_afb38e7d33fff16d43efe90c66bcb29d = L.marker(
+                [41.6905, 41.7243],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_76ab3261e5174e3b70ca92fdd34d91a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_afb38e7d33fff16d43efe90c66bcb29d.setIcon(icon_76ab3261e5174e3b70ca92fdd34d91a3);
+        
+    
+        var popup_d6d53ccfffd0564fe92d14ade1912fe3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f21977fc0e7a185f85ff46d82b554f76 = $(`<div id="html_f21977fc0e7a185f85ff46d82b554f76" style="width: 100.0%; height: 100.0%;"><b>Batumi Botanical – Green Cape</b><br>Cień + widoki na klify i morze.</div>`)[0];
+            popup_d6d53ccfffd0564fe92d14ade1912fe3.setContent(html_f21977fc0e7a185f85ff46d82b554f76);
+        
+
+        marker_afb38e7d33fff16d43efe90c66bcb29d.bindPopup(popup_d6d53ccfffd0564fe92d14ade1912fe3)
+        ;
+
+        
+    
+    
+            var marker_e60091f1f59b1d8ff029c809d2f2e424 = L.marker(
+                [41.6486, 41.6411],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_ac6929f850c1e153a68fe8f125079cd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e60091f1f59b1d8ff029c809d2f2e424.setIcon(icon_ac6929f850c1e153a68fe8f125079cd6);
+        
+    
+        var popup_20e9cf8b02bcb148d7e1a358d6562fc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86e0ec7c370c2c88af47655cd0101526 = $(`<div id="html_86e0ec7c370c2c88af47655cd0101526" style="width: 100.0%; height: 100.0%;"><b>Kolejka ARGO</b><br>Panorama Batumi; najlepiej o zachodzie słońca.</div>`)[0];
+            popup_20e9cf8b02bcb148d7e1a358d6562fc0.setContent(html_86e0ec7c370c2c88af47655cd0101526);
+        
+
+        marker_e60091f1f59b1d8ff029c809d2f2e424.bindPopup(popup_20e9cf8b02bcb148d7e1a358d6562fc0)
+        ;
+
+        
+    
+    
+            var marker_64d2e4ad356158a4f28b50db23cccf8a = L.marker(
+                [41.5705, 41.5769],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_6f5b66ca6062930a29802ff6448ff01c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_64d2e4ad356158a4f28b50db23cccf8a.setIcon(icon_6f5b66ca6062930a29802ff6448ff01c);
+        
+    
+        var popup_9f7d8c7016bf27b50ef0df161de5546e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4f776c93a54d8f3f03a0ce97282f189 = $(`<div id="html_b4f776c93a54d8f3f03a0ce97282f189" style="width: 100.0%; height: 100.0%;"><b>Twierdza Gonio</b><br>Rzymska forteca; szybkie zwiedzanie z dziećmi.</div>`)[0];
+            popup_9f7d8c7016bf27b50ef0df161de5546e.setContent(html_b4f776c93a54d8f3f03a0ce97282f189);
+        
+
+        marker_64d2e4ad356158a4f28b50db23cccf8a.bindPopup(popup_9f7d8c7016bf27b50ef0df161de5546e)
+        ;
+
+        
+    
+    
+            var marker_a0a092f2e48e875e0e09aceae309a8b1 = L.marker(
+                [41.7855, 41.7752],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_490b7cc7b9fe5d18fd45d947bd6ece91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a0a092f2e48e875e0e09aceae309a8b1.setIcon(icon_490b7cc7b9fe5d18fd45d947bd6ece91);
+        
+    
+        var popup_563abe3911b07e1172883926211c3af6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5e92040ed7d5dafd9fd6ad1e4fd30d2 = $(`<div id="html_d5e92040ed7d5dafd9fd6ad1e4fd30d2" style="width: 100.0%; height: 100.0%;"><b>Twierdza Petra</b><br>Ruiny na klifie; widok na morze, blisko Kobuleti.</div>`)[0];
+            popup_563abe3911b07e1172883926211c3af6.setContent(html_d5e92040ed7d5dafd9fd6ad1e4fd30d2);
+        
+
+        marker_a0a092f2e48e875e0e09aceae309a8b1.bindPopup(popup_563abe3911b07e1172883926211c3af6)
+        ;
+
+        
+    
+    
+            var marker_9d3829a1693df5c31dc9deb9eb86ab7b = L.marker(
+                [41.5932, 41.8132],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_159e2020828571d5485a9e4ca9212d47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9d3829a1693df5c31dc9deb9eb86ab7b.setIcon(icon_159e2020828571d5485a9e4ca9212d47);
+        
+    
+        var popup_514a1ee2dab7e1b9567448fe6f440fc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32997fa0c0129b5c2ff8bde448685e50 = $(`<div id="html_32997fa0c0129b5c2ff8bde448685e50" style="width: 100.0%; height: 100.0%;"><b>Wodospad Makhuntseti</b><br>Most łukowy i kaskada; krótki dojazd z Batumi.</div>`)[0];
+            popup_514a1ee2dab7e1b9567448fe6f440fc1.setContent(html_32997fa0c0129b5c2ff8bde448685e50);
+        
+
+        marker_9d3829a1693df5c31dc9deb9eb86ab7b.bindPopup(popup_514a1ee2dab7e1b9567448fe6f440fc1)
+        ;
+
+        
+    
+    
+            var marker_d3248058dd9fd49439bcc7d04b8bb02a = L.marker(
+                [42.7815, 42.0565],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_0b5ed1f613aa88294dc59232b0286969 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d3248058dd9fd49439bcc7d04b8bb02a.setIcon(icon_0b5ed1f613aa88294dc59232b0286969);
+        
+    
+        var popup_533b78dd06cd68f6384152e12102c501 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a057770dfb8a9e86079c5aa9f2f18ec = $(`<div id="html_5a057770dfb8a9e86079c5aa9f2f18ec" style="width: 100.0%; height: 100.0%;"><b>Enguri – punkt piknikowy</b><br>Barierki i zatoczki; bezpieczny postój.</div>`)[0];
+            popup_533b78dd06cd68f6384152e12102c501.setContent(html_5a057770dfb8a9e86079c5aa9f2f18ec);
+        
+
+        marker_d3248058dd9fd49439bcc7d04b8bb02a.bindPopup(popup_533b78dd06cd68f6384152e12102c501)
+        ;
+
+        
+    
+    
+            var marker_98df726d9e607de22e54f7d9077fa6d7 = L.marker(
+                [43.0585, 42.7045],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_8410106d219b942f1eb07b265fde9372 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_98df726d9e607de22e54f7d9077fa6d7.setIcon(icon_8410106d219b942f1eb07b265fde9372);
+        
+    
+        var popup_96a7e792e600e3222c68abaf9d7cada2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_974583795685f4f477ad56bdb111b5b1 = $(`<div id="html_974583795685f4f477ad56bdb111b5b1" style="width: 100.0%; height: 100.0%;"><b>Rzeka Mestiachala – plaża kamienista</b><br>Łatwe zejście do wody; dzieci lubią rzucać kamyki.</div>`)[0];
+            popup_96a7e792e600e3222c68abaf9d7cada2.setContent(html_974583795685f4f477ad56bdb111b5b1);
+        
+
+        marker_98df726d9e607de22e54f7d9077fa6d7.bindPopup(popup_96a7e792e600e3222c68abaf9d7cada2)
+        ;
+
+        
+    
+    
+            var marker_ec875700696f0b57c53a86b0ba7c743b = L.marker(
+                [42.456, 42.36],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_ee5ffe1a5f8c8a0d1d6306502483af52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ec875700696f0b57c53a86b0ba7c743b.setIcon(icon_ee5ffe1a5f8c8a0d1d6306502483af52);
+        
+    
+        var popup_e975551f035a92d0469a534b6af60212 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4288709f18c99027c74a94a8a5ad4647 = $(`<div id="html_4288709f18c99027c74a94a8a5ad4647" style="width: 100.0%; height: 100.0%;"><b>Martvili – baseny poniżej kładek</b><br>Płytkie miejsca do pluskania (latem).</div>`)[0];
+            popup_e975551f035a92d0469a534b6af60212.setContent(html_4288709f18c99027c74a94a8a5ad4647);
+        
+
+        marker_ec875700696f0b57c53a86b0ba7c743b.bindPopup(popup_e975551f035a92d0469a534b6af60212)
+        ;
+
+        
+    
+    
+            var marker_5340bcda838547f84a0059550d441638 = L.marker(
+                [41.9985, 41.771],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_abd6f1baecd2503c85a20d6a13ad8081 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5340bcda838547f84a0059550d441638.setIcon(icon_abd6f1baecd2503c85a20d6a13ad8081);
+        
+    
+        var popup_3772e0af4d068d5568542ca29c0ad00f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6910512c557de1f80c72814373dfbb3d = $(`<div id="html_6910512c557de1f80c72814373dfbb3d" style="width: 100.0%; height: 100.0%;"><b>Ureki – sosnowy zagajnik</b><br>Cień tuż przy plaży; idealny na przerwę.</div>`)[0];
+            popup_3772e0af4d068d5568542ca29c0ad00f.setContent(html_6910512c557de1f80c72814373dfbb3d);
+        
+
+        marker_5340bcda838547f84a0059550d441638.bindPopup(popup_3772e0af4d068d5568542ca29c0ad00f)
+        ;
+
+        
+    
+    
+            var marker_6473a42904a7e1987624cc208bb70b45 = L.marker(
+                [41.6935, 41.726],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_9902ed3756101441e2323c5b33a05ce1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6473a42904a7e1987624cc208bb70b45.setIcon(icon_9902ed3756101441e2323c5b33a05ce1);
+        
+    
+        var popup_6d43e173e4a83a5cab6f12f9579d457b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14843218ccae4f686537c953837e01a2 = $(`<div id="html_14843218ccae4f686537c953837e01a2" style="width: 100.0%; height: 100.0%;"><b>Botanical – polana nad klifem</b><br>Widok + ławki w cieniu.</div>`)[0];
+            popup_6d43e173e4a83a5cab6f12f9579d457b.setContent(html_14843218ccae4f686537c953837e01a2);
+        
+
+        marker_6473a42904a7e1987624cc208bb70b45.bindPopup(popup_6d43e173e4a83a5cab6f12f9579d457b)
+        ;
+
+        
+    
+    
+            var marker_842eadb759fc69e9784928d5785d8c63 = L.marker(
+                [42.5905, 42.522],
+                {}
+            ).addTo(feature_group_6e11695b94dcd4025e8210db182eb250);
+        
+    
+            var icon_893742a1a5e0e5bf26acd24ca15ac665 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_842eadb759fc69e9784928d5785d8c63.setIcon(icon_893742a1a5e0e5bf26acd24ca15ac665);
+        
+    
+        var popup_2908a35fd8aa8017160830e345a262d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ecfd1481ea79e32fd0f6ddde3e2c1d1 = $(`<div id="html_6ecfd1481ea79e32fd0f6ddde3e2c1d1" style="width: 100.0%; height: 100.0%;"><b>Kinchkha – łąka przy wejściu</b><br>Dobre miejsce na kanapki po zwiedzaniu.</div>`)[0];
+            popup_2908a35fd8aa8017160830e345a262d0.setContent(html_6ecfd1481ea79e32fd0f6ddde3e2c1d1);
+        
+
+        marker_842eadb759fc69e9784928d5785d8c63.bindPopup(popup_2908a35fd8aa8017160830e345a262d0)
+        ;
+
+        
+    
+    
+            var feature_group_19176cca817140699eecc58efb249c74 = L.featureGroup(
+                {}
+            ).addTo(map_797d534841eb2ce94338b2ab68def2f6);
+        
+    
+            var marker_34fc68ce487096002d94fb148c9dd615 = L.marker(
+                [42.2679, 42.718],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_ae2c7ca535667e535fa85cea4583bd2d = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eKutaisi\u003c/b\u003e\u003cbr\u003eBaza wypadowa: stare miasto, dobre noclegi przy lotnisku.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_34fc68ce487096002d94fb148c9dd615.setIcon(div_icon_ae2c7ca535667e535fa85cea4583bd2d);
+        
+    
+            var marker_0e36bbb609d31b128bab70b1a9de15b5 = L.marker(
+                [42.365933, 42.19481],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_ba69c2920ea2e656101a61bc027f4557 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eJikha/Nokalakevi \u2013 dzikie \u017ar\u00f3d\u0142a\u003c/b\u003e\u003cbr\u003eNaturalne baseny solankowe 38\u201340\u00b0C w lesie.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_0e36bbb609d31b128bab70b1a9de15b5.setIcon(div_icon_ba69c2920ea2e656101a61bc027f4557);
+        
+    
+            var marker_b9e1585bd29ead439b64c424a8e8b19d = L.marker(
+                [42.3772594, 42.6011094],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_e5660bcf0bd91c4fd650bd4efbae5d13 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eJaskinia Prometeusza\u003c/b\u003e\u003cbr\u003eTrasa 1.4 km, iluminacje; opcjonalna kr\u00f3tka \u0142\u00f3dka.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_b9e1585bd29ead439b64c424a8e8b19d.setIcon(div_icon_e5660bcf0bd91c4fd650bd4efbae5d13);
+        
+    
+            var marker_df2c9c4186c9959fa61840ba5dbe9dd2 = L.marker(
+                [43.0457, 42.7277],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_d39d4753d7a3141a7510ea637663e3b9 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eMestia\u003c/b\u003e\u003cbr\u003eWie\u017ce Svan\u00f3w, kolejka Hatsvali, muzea.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_df2c9c4186c9959fa61840ba5dbe9dd2.setIcon(div_icon_d39d4753d7a3141a7510ea637663e3b9);
+        
+    
+            var marker_c5626b48b93f6a390018261b36049bb9 = L.marker(
+                [42.9181, 43.0167],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_8ba89b774f0b97735622785e11bb48fe = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eUshguli\u003c/b\u003e\u003cbr\u003e\u015aredniowieczna wie\u015b 2100 m, widok na Shkhar\u0119.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_c5626b48b93f6a390018261b36049bb9.setIcon(div_icon_8ba89b774f0b97735622785e11bb48fe);
+        
+    
+            var marker_8f328703141c2188ce5584ab6b4c529a = L.marker(
+                [42.4775, 42.3707],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_0c5234302000c87fab92139ee0ede970 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eMartvili Canyon\u003c/b\u003e\u003cbr\u003eK\u0142adki nad turkusow\u0105 rzek\u0105, naturalne baseny.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_8f328703141c2188ce5584ab6b4c529a.setIcon(div_icon_0c5234302000c87fab92139ee0ede970);
+        
+    
+            var marker_45bf6d6eceb3068cec4781331a5edfe7 = L.marker(
+                [41.6168, 41.6367],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_b07f945658f44732f65da060dfc22298 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eBatumi\u003c/b\u003e\u003cbr\u003eBulwar, ogr\u00f3d botaniczny, wieczorne atrakcje.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_45bf6d6eceb3068cec4781331a5edfe7.setIcon(div_icon_b07f945658f44732f65da060dfc22298);
+        
+    
+            var marker_8b4cbf5ea28dcbc7446d0d79b35edf0f = L.marker(
+                [41.516813, 41.71878],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_25cad004467403505c12373929266ffa = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eRejon Gvara (Ad\u017caria)\u003c/b\u003e\u003cbr\u003eG\u00f3rska Ad\u017caria: panoramy, dzikie k\u0105pieliska nad rzek\u0105.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_8b4cbf5ea28dcbc7446d0d79b35edf0f.setIcon(div_icon_25cad004467403505c12373929266ffa);
+        
+    
+            var marker_b76cd1495efd0c89d38341bada00f946 = L.marker(
+                [41.8204, 41.774],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_021be060b023815737911821b385c1e6 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eKobuleti\u003c/b\u003e\u003cbr\u003eSpokojniejsze wybrze\u017ce blisko Batumi.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_b76cd1495efd0c89d38341bada00f946.setIcon(div_icon_021be060b023815737911821b385c1e6);
+        
+    
+            var marker_74174bc9428348eef63f46a6e414f5ab = L.marker(
+                [41.9957, 41.7784],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_ab079637a1bed10e900e7fc60eb7dddd = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eUreki\u003c/b\u003e\u003cbr\u003eCzarny, magnetyczny piasek; p\u0142ytko dla dzieci.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_74174bc9428348eef63f46a6e414f5ab.setIcon(div_icon_ab079637a1bed10e900e7fc60eb7dddd);
+        
+    
+            var marker_c39cf93823a93687969b67455eabe6c4 = L.marker(
+                [42.78, 42.058],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_a9afea8d11286c219dd00ca09177f9fe = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eZapora Enguri\u003c/b\u003e\u003cbr\u003eSpektakularny zbiornik; dobry post\u00f3j na zdj\u0119cia/piknik.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_c39cf93823a93687969b67455eabe6c4.setIcon(div_icon_a9afea8d11286c219dd00ca09177f9fe);
+        
+    
+            var marker_44f26e765cb7a81953afe75fbed2ba71 = L.marker(
+                [43.0278, 42.7342],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_5c450f05d080e992bce49f05a5722ff5 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eKolejka Hatsvali (Zuruldi)\u003c/b\u003e\u003cbr\u003e\u0141atwe g\u00f3rskie widoki bez d\u0142ugiego trekkingu.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_44f26e765cb7a81953afe75fbed2ba71.setIcon(div_icon_5c450f05d080e992bce49f05a5722ff5);
+        
+    
+            var marker_0afa634093eb8328e342a0ab7697e2af = L.marker(
+                [42.9139, 43.0186],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_7f20f99920928bdffdf7e7b160d453de = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eKo\u015bci\u00f3\u0142 Lamaria \u2013 Ushguli\u003c/b\u003e\u003cbr\u003eNajlepsza panorama na lodowiec Shkhara.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_0afa634093eb8328e342a0ab7697e2af.setIcon(div_icon_7f20f99920928bdffdf7e7b160d453de);
+        
+    
+            var marker_87d0a0931f1cb88f0780fe15fb7e79bf = L.marker(
+                [43.0605, 42.709],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_f117359235f7ca62d15a8d63a6630c7c = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eMost startowy \u2013 szlak Chaladi\u003c/b\u003e\u003cbr\u003eKr\u00f3tki, rodzinny trekking wzd\u0142u\u017c rzeki.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_87d0a0931f1cb88f0780fe15fb7e79bf.setIcon(div_icon_f117359235f7ca62d15a8d63a6630c7c);
+        
+    
+            var marker_3210ef84a99e1f8f163f8da1ed2ab511 = L.marker(
+                [42.5123, 42.5868],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_75d94ad7c93bf95fe60a72d890c8101d = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eOkatse \u2013 wej\u015bcie (Gordi)\u003c/b\u003e\u003cbr\u003eK\u0142adki nad urwiskami i tarasy widokowe.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_3210ef84a99e1f8f163f8da1ed2ab511.setIcon(div_icon_75d94ad7c93bf95fe60a72d890c8101d);
+        
+    
+            var marker_40ad72cc4307324c0eb090e853919d5f = L.marker(
+                [42.5943, 42.5241],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_a6cffec4c4ee5aeecbb4f2d842e0810b = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eWodospad Kinchkha\u003c/b\u003e\u003cbr\u003eWysokie kaskady, taras widokowy; lekki spacer.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_40ad72cc4307324c0eb090e853919d5f.setIcon(div_icon_a6cffec4c4ee5aeecbb4f2d842e0810b);
+        
+    
+            var marker_440f13a5b71794376e11e6a8b737049e = L.marker(
+                [42.5086, 41.8709],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_de6a17bf8c9ed4767e8790a3adb359ba = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003ePa\u0142ac Dadianich (Zugdidi)\u003c/b\u003e\u003cbr\u003eMuzeum i ogr\u00f3d; dobra przerwa w trasie.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_440f13a5b71794376e11e6a8b737049e.setIcon(div_icon_de6a17bf8c9ed4767e8790a3adb359ba);
+        
+    
+            var marker_8287f5e0e8ecd0573d3eb36abcd67ba0 = L.marker(
+                [41.6905, 41.7243],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_2ebec5e0bdabc8d67c09dfa4f18aa76d = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eBatumi Botanical \u2013 Green Cape\u003c/b\u003e\u003cbr\u003eCie\u0144 + widoki na klify i morze.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_8287f5e0e8ecd0573d3eb36abcd67ba0.setIcon(div_icon_2ebec5e0bdabc8d67c09dfa4f18aa76d);
+        
+    
+            var marker_2cf3246ab301b781c35877aa189ff06c = L.marker(
+                [41.6486, 41.6411],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_7585e8b0aabae572f88e17c34560b12a = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eKolejka ARGO\u003c/b\u003e\u003cbr\u003ePanorama Batumi; najlepiej o zachodzie s\u0142o\u0144ca.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_2cf3246ab301b781c35877aa189ff06c.setIcon(div_icon_7585e8b0aabae572f88e17c34560b12a);
+        
+    
+            var marker_13a398ca23544f68e16e1813d217a7be = L.marker(
+                [41.5705, 41.5769],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_f689da288f429d6791f7fc468fc26b8d = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eTwierdza Gonio\u003c/b\u003e\u003cbr\u003eRzymska forteca; szybkie zwiedzanie z dzie\u0107mi.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_13a398ca23544f68e16e1813d217a7be.setIcon(div_icon_f689da288f429d6791f7fc468fc26b8d);
+        
+    
+            var marker_dca1994ab6a1dc3710aab1f8c2a6ed30 = L.marker(
+                [41.7855, 41.7752],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_540cd886f0e9f47a0b6113baaa8f9e49 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eTwierdza Petra\u003c/b\u003e\u003cbr\u003eRuiny na klifie; widok na morze, blisko Kobuleti.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_dca1994ab6a1dc3710aab1f8c2a6ed30.setIcon(div_icon_540cd886f0e9f47a0b6113baaa8f9e49);
+        
+    
+            var marker_61b023b3bd65a8b8448de1a4cfb7954a = L.marker(
+                [41.5932, 41.8132],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_a6c76dc054a723a65c327c7ae8472248 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eWodospad Makhuntseti\u003c/b\u003e\u003cbr\u003eMost \u0142ukowy i kaskada; kr\u00f3tki dojazd z Batumi.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_61b023b3bd65a8b8448de1a4cfb7954a.setIcon(div_icon_a6c76dc054a723a65c327c7ae8472248);
+        
+    
+            var marker_2c621be90168c7132628bee755cd803c = L.marker(
+                [42.7815, 42.0565],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_39a08489e32c0763dc9f26d1ff8df9f5 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eEnguri \u2013 punkt piknikowy\u003c/b\u003e\u003cbr\u003eBarierki i zatoczki; bezpieczny post\u00f3j.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_2c621be90168c7132628bee755cd803c.setIcon(div_icon_39a08489e32c0763dc9f26d1ff8df9f5);
+        
+    
+            var marker_5744cd293137f052477056fbf17a4738 = L.marker(
+                [43.0585, 42.7045],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_fd6a55b79a398d90f97b37bd0a1525e3 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eRzeka Mestiachala \u2013 pla\u017ca kamienista\u003c/b\u003e\u003cbr\u003e\u0141atwe zej\u015bcie do wody; dzieci lubi\u0105 rzuca\u0107 kamyki.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_5744cd293137f052477056fbf17a4738.setIcon(div_icon_fd6a55b79a398d90f97b37bd0a1525e3);
+        
+    
+            var marker_7d8d6b64a4543268e62bad42b2c88c92 = L.marker(
+                [42.456, 42.36],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_742ead42f070d96d2d8f3bb91b17ec88 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eMartvili \u2013 baseny poni\u017cej k\u0142adek\u003c/b\u003e\u003cbr\u003eP\u0142ytkie miejsca do pluskania (latem).\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_7d8d6b64a4543268e62bad42b2c88c92.setIcon(div_icon_742ead42f070d96d2d8f3bb91b17ec88);
+        
+    
+            var marker_8ce8a1af051d052eb0334c31ba39f377 = L.marker(
+                [41.9985, 41.771],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_32b04640a0e093f53cc6a51d2de57c95 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eUreki \u2013 sosnowy zagajnik\u003c/b\u003e\u003cbr\u003eCie\u0144 tu\u017c przy pla\u017cy; idealny na przerw\u0119.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_8ce8a1af051d052eb0334c31ba39f377.setIcon(div_icon_32b04640a0e093f53cc6a51d2de57c95);
+        
+    
+            var marker_efba815d00d3ba81769bdccf69493307 = L.marker(
+                [41.6935, 41.726],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_125891bdce9214058cb9755aca506736 = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eBotanical \u2013 polana nad klifem\u003c/b\u003e\u003cbr\u003eWidok + \u0142awki w cieniu.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_efba815d00d3ba81769bdccf69493307.setIcon(div_icon_125891bdce9214058cb9755aca506736);
+        
+    
+            var marker_86feb1de470e6d7bda647480c1b4eb1a = L.marker(
+                [42.5905, 42.522],
+                {}
+            ).addTo(feature_group_19176cca817140699eecc58efb249c74);
+        
+    
+            var div_icon_c5f036e7232667b2c06203d3f4edebaf = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"background: rgba(255,255,255,0.85); border:1px solid #777; border-radius:6px; padding:4px 6px; font-size:11px; line-height:1.2; white-space:nowrap;\"\u003e\n        \u003cb\u003eKinchkha \u2013 \u0142\u0105ka przy wej\u015bciu\u003c/b\u003e\u003cbr\u003eDobre miejsce na kanapki po zwiedzaniu.\n    \u003c/div\u003e\n    ", "iconAnchor": [0, 0]});
+            marker_86feb1de470e6d7bda647480c1b4eb1a.setIcon(div_icon_c5f036e7232667b2c06203d3f4edebaf);
+        
+    
+            var layer_control_d5925263794cc32492018c8f63b908ba = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_284b7315b85c9110cd5ea674acd84171,
+                },
+                overlays :  {
+                    "Punkty (klikalne)" : feature_group_6e11695b94dcd4025e8210db182eb250,
+                    "Etykiety (zawsze widoczne)" : feature_group_19176cca817140699eecc58efb249c74,
+                },
+            };
+            L.control.layers(
+                layer_control_d5925263794cc32492018c8f63b908ba.base_layers,
+                layer_control_d5925263794cc32492018c8f63b908ba.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_797d534841eb2ce94338b2ab68def2f6);
+        
+</script>
+</html>
